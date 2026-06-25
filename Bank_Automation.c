@@ -9,9 +9,12 @@ int main(){
     struct Bank_Account x;
     int choice;
     float amount;
-    x.account_no=1001;
-    strcpy(x.name,"Sumeyra Kahya");
-    x.balance=0;
+   printf("Enter account number:");
+    scanf("%d",&x.account_no);
+    printf("Enter name-surname:");
+    scanf("%[^\n]",x.name);
+    printf("Enter Initial Balance:");
+    scanf("%.2f",&x.balance);
     do{
         printf("\n-Bank Automation-\n");
         printf("1.Show Account Information\n");
